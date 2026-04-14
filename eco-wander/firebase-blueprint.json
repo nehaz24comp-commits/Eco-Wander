@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "Trip": {
+      "title": "Trip",
+      "description": "A saved eco-friendly trip itinerary",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who saved the trip"
+        },
+        "city": {
+          "type": "string",
+          "description": "The destination city"
+        },
+        "hotelName": {
+          "type": "string",
+          "description": "The name of the selected hotel"
+        },
+        "hotelPrice": {
+          "type": "number",
+          "description": "The price per night of the hotel"
+        },
+        "duration": {
+          "type": "number",
+          "description": "The duration of the trip in days"
+        },
+        "budget": {
+          "type": "number",
+          "description": "The estimated total budget for the trip"
+        },
+        "carbonFootprint": {
+          "type": "number",
+          "description": "The estimated CO2 emissions in kg"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the trip was saved"
+        }
+      },
+      "required": ["userId", "city", "duration", "carbonFootprint"]
+    }
+  },
+  "firestore": {
+    "/trips/{tripId}": {
+      "schema": "Trip",
+      "description": "Collection of saved trips"
+    }
+  }
+}

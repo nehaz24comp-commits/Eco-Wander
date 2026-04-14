@@ -1,0 +1,2030 @@
+None selected
+
+Skip to content
+Using Mahatma Education Society Mail with screen readers
+in:sent 
+
+Conversations
+ 
+Program Policies
+Powered by Google
+Last account activity: 0 minutes ago
+Details
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWander | Sustainable & Unique Travel Planning</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="EcoWander helps you discover and plan sustainable trips to unique, off-the-beaten-path destinations. Calculate your carbon footprint and support local communities.">
+    <meta name="keywords" content="sustainable travel, eco tourism, responsible travel, carbon footprint calculator, off the beaten path, hidden gems, eco-friendly destinations">
+    <meta name="author" content="EcoWander">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="EcoWander - Sustainable & Unique Travel Planning">
+    <meta property="og:description" content="Discover Earth's hidden gems responsibly with our eco-friendly travel planner.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80">
+    <meta property="og:url" content="https://www.ecowander.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EcoWander - Sustainable Travel Planning">
+    <meta name="twitter:description" content="Plan eco-friendly trips to unique destinations worldwide.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #2E8B57;
+            --light-green: #3CB371;
+            --dark-green: #1A5D3A;
+            --earth-brown: #8B4513;
+            --sand: #F5DEB3;
+            --sky-blue: #87CEEB;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Landing Page Styles */
+        .landing-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated Background Elements */
+        .floating-leaf {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 4rem;
+            animation: float 15s infinite linear;
+        }
+
+        .leaf-1 { top: 10%; left: 5%; animation-delay: 0s; }
+        .leaf-2 { top: 60%; right: 10%; animation-delay: 3s; }
+        .leaf-3 { bottom: 20%; left: 20%; animation-delay: 6s; }
+        .leaf-4 { top: 30%; right: 20%; animation-delay: 9s; }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.1; }
+            50% { transform: translateY(-100px) rotate(180deg); opacity: 0.2; }
+            100% { transform: translateY(0) rotate(360deg); opacity: 0.1; }
+        }
+
+        /* Landing Content */
+        .landing-content {
+            position: relative;
+            z-index: 2;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        .landing-logo {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: bounceIn 1s ease;
+        }
+
+        .landing-logo i {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .landing-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease 0.3s both;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .landing-subtitle {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s ease 0.6s both;
+            opacity: 0.9;
+        }
+
+        .landing-buttons {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 1s ease 0.9s both;
+        }
+
+        .landing-btn {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-login {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-login:hover {
+            background: white;
+            color: var(--dark-green);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-signup {
+            background: var(--earth-brown);
+            color: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-signup:hover {
+            background: #6b3410;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .landing-footer {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            animation: fadeIn 2s ease 1.5s both;
+        }
+
+        /* Animations */
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-container {
+            background: white;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 450px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            padding: 30px 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-header h2 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .modal-header p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--light-gray);
+        }
+
+        .close-modal:hover {
+            color: var(--earth-brown);
+            background: #eee;
+        }
+
+        .modal-body {
+            padding: 0 30px 30px;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-green);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-green);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46, 139, 86, 0.1);
+        }
+
+        .password-input {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #999;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+        }
+
+        .forgot-password {
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .submit-btn:hover {
+            background: var(--dark-green);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(46, 139, 86, 0.3);
+        }
+
+        .social-login {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-login p {
+            color: #666;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .social-login p::before,
+        .social-login p::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30%;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .social-login p::before {
+            left: 0;
+        }
+
+        .social-login p::after {
+            right: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icon.google { background: #DB4437; }
+        .social-icon.facebook { background: #4267B2; }
+        .social-icon.twitter { background: #1DA1F2; }
+
+        .switch-form {
+            text-align: center;
+            color: #666;
+        }
+
+        .switch-form a {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .switch-form a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Website Styles (Hidden Initially) */
+        .main-website {
+            display: none;
+        }
+
+        /* Your Original CSS Styles (Moved inside main-website scope) */
+        .main-website h1, .main-website h2, .main-website h3, .main-website h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        /* Skip Link */
+        .main-website .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-green);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .main-website .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Header & Navigation */
+        .main-website header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .main-website .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .main-website .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .main-website .logo-icon {
+            color: var(--primary-green);
+            font-size: 2rem;
+        }
+        
+        .main-website .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-green);
+        }
+        
+        .main-website .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        .main-website .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .main-website .nav-links a:hover {
+            color: var(--primary-green);
+        }
+        
+        .main-website .cta-button {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .main-website .cta-button:hover {
+            background-color: var(--dark-green);
+        }
+        
+        /* Hero Section */
+        .main-website .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .main-website .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .main-website .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Search Bar */
+        .main-website .search-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main-website .search-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .main-website .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main-website .form-group label {
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: var(--dark-green);
+        }
+        
+        .main-website .form-group input, 
+        .main-website .form-group select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .main-website .search-button {
+            background-color: var(--earth-brown);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+        }
+        
+        .main-website .search-button:hover {
+            background-color: #6b3410;
+        }
+        
+        /* Features Section */
+        .main-website .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-green);
+            position: relative;
+        }
+        
+        .main-website .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--light-green);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        .main-website .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .main-website .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .main-website .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .main-website .feature-icon {
+            background-color: var(--light-green);
+            color: white;
+            font-size: 2rem;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .main-website .feature-content {
+            padding: 25px;
+        }
+        
+        .main-website .feature-content h3 {
+            margin-bottom: 15px;
+            color: var(--dark-green);
+        }
+        
+        /* Destinations Section */
+        .main-website .destinations {
+            margin-bottom: 60px;
+        }
+        
+        .main-website .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .main-website .destination-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .main-website .destination-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .main-website .destination-content {
+            padding: 20px;
+        }
+        
+        .main-website .destination-content h3 {
+            margin-bottom: 10px;
+            color: var(--dark-green);
+        }
+        
+        .main-website .eco-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+            color: var(--primary-green);
+        }
+        
+        .main-website .destination-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .main-website .stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Impact Counter */
+        .main-website .impact-counter {
+            background-color: var(--dark-green);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .main-website .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .main-website .counter-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .main-website .counter-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        /* Testimonials Section */
+        .main-website .testimonials {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+        
+        .main-website .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .main-website .testimonial-card {
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .main-website .testimonial-content {
+            margin-bottom: 20px;
+        }
+        
+        .main-website .testimonial-content i {
+            color: var(--light-green);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            opacity: 0.5;
+        }
+        
+        .main-website .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .main-website .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .main-website .testimonial-author h4 {
+            color: var(--dark-green);
+            margin-bottom: 5px;
+        }
+        
+        .main-website .testimonial-author p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Newsletter Section */
+        .main-website .newsletter {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .main-website .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .main-website .newsletter h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .main-website .newsletter p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .main-website .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .main-website .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .main-website .newsletter-form button {
+            padding: 15px 30px;
+            border: none;
+            background-color: var(--earth-brown);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .main-website .newsletter-form button:hover {
+            background-color: #6b3410;
+        }
+        
+        .main-website .newsletter .small {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Blog Preview Section */
+        .main-website .blog-preview {
+            padding: 60px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .main-website .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .main-website .blog-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .main-website .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .main-website .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .main-website .blog-content {
+            padding: 20px;
+        }
+        
+        .main-website .blog-category {
+            display: inline-block;
+            background-color: var(--light-green);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .main-website .blog-content h3 {
+            margin-bottom: 10px;
+            color: var(--dark-green);
+        }
+        
+        .main-website .blog-content p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .main-website .read-more {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .main-website .read-more:hover {
+            gap: 10px;
+        }
+        
+        /* Carbon Calculator Section */
+        .main-website .carbon-calculator {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .main-website .calculator-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .main-website .calculator-content h2 {
+            color: var(--dark-green);
+            margin-bottom: 15px;
+        }
+        
+        .main-website .calculator-content p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .main-website .calculator-form {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .main-website .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .main-website .calculator-form .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .main-website .calculator-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark-green);
+            font-weight: 500;
+        }
+        
+        .main-website .calculator-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .main-website .calculate-btn {
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .main-website .calculate-btn:hover {
+            background-color: var(--dark-green);
+        }
+        
+        .main-website .carbon-result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--light-green);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .main-website .carbon-result h3 {
+            margin-bottom: 10px;
+        }
+        
+        .main-website .result-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .main-website .comparison {
+            margin-bottom: 20px;
+        }
+        
+        .main-website .offset-btn {
+            background-color: white;
+            color: var(--dark-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .main-website .offset-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .main-website .calculator-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        .main-website footer {
+            background-color: var(--dark-green);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .main-website .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .main-website .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .main-website .footer-links {
+            list-style: none;
+        }
+        
+        .main-website .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .main-website .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .main-website .footer-links a:hover {
+            color: white;
+        }
+        
+        .main-website .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .main-website .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .main-website .social-icons a:hover {
+            background-color: var(--light-green);
+        }
+        
+        .main-website .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        /* User Profile in Header */
+        .main-website .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark-green);
+            font-weight: 500;
+        }
+        
+        .main-website .user-profile i {
+            font-size: 1.5rem;
+        }
+        
+        /* Logout Button */
+        .main-website .logout-btn {
+            background: transparent;
+            border: 1px solid var(--primary-green);
+            color: var(--primary-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .main-website .logout-btn:hover {
+            background: var(--primary-green);
+            color: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .landing-title {
+                font-size: 2.5rem;
+            }
+            
+            .landing-subtitle {
+                font-size: 1.2rem;
+                padding: 0 20px;
+            }
+            
+            .landing-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .landing-btn {
+                text-align: center;
+                justify-content: center;
+            }
+            
+            .main-website .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-website .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-website .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-website .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-website .calculator-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-website .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-website .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <!-- Animated Background -->
+        <div class="floating-leaf leaf-1"><i class="fas fa-leaf"></i></div>
+        <div class="floating-leaf leaf-2"><i class="fas fa-leaf"></i></div>
+        <div class="floating-leaf leaf-3"><i class="fas fa-leaf"></i></div>
+        <div class="floating-leaf leaf-4"><i class="fas fa-leaf"></i></div>
+        
+        <!-- Landing Content -->
+        <div class="landing-content">
+            <div class="landing-logo">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <h1 class="landing-title">EcoWander</h1>
+            <p class="landing-subtitle">Discover Earth's hidden gems responsibly. Plan sustainable trips to unique destinations that respect local communities and preserve natural beauty.</p>
+            
+            <div class="landing-buttons">
+                <button class="landing-btn btn-login" onclick="openModal('login')">
+                    <i class="fas fa-sign-in-alt"></i> Log In
+                </button>
+                <button class="landing-btn btn-signup" onclick="openModal('signup')">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </button>
+            </div>
+            
+            <div class="landing-footer">
+                <p>Join 12,847+ eco-conscious travelers • Start your sustainable journey today</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login/Signup Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle">Welcome Back</h2>
+                <p id="modalSubtitle">Log in to continue your eco-journey</p>
+            </div>
+            <div class="modal-body">
+                <!-- Login Form -->
+                <form id="loginForm" style="display: block;">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword(this)"></i>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="handleLogin(event)">
+                        <i class="fas fa-sign-in-alt"></i> Log In
+                    </button>
+                    
+                    <div class="social-login">
+                        <p>Or continue with</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="switch-form">
+                        Don't have an account? <a href="#" onclick="switchToSignup()">Sign up</a>
+                    </div>
+                </form>
+                
+                <!-- Signup Form -->
+                <form id="signupForm" style="display: none;">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="signupName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <div class="password-input">
+                            <input type="password" id="signupPassword" placeholder="Create a password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword(this)"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" id="signupConfirmPassword" placeholder="Confirm your password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword(this)"></i>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" required> I agree to the <a href="#">Terms</a> & <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="handleSignup(event)">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </button>
+                    
+                    <div class="social-login">
+                        <p>Or sign up with</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="switch-form">
+                        Already have an account? <a href="#" onclick="switchToLogin()">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website Content (Hidden by default) -->
+    <div class="main-website" id="mainWebsite">
+        <!-- Skip to main content link -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Header & Navigation (Modified with Logout) -->
+        <header>
+            <div class="container header-container">
+                <a href="#" class="logo">
+                    <i class="fas fa-leaf logo-icon"></i>
+                    <span class="logo-text">EcoWander</span>
+                </a>
+                
+                <nav aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="#"><i class="fas fa-compass"></i> Explore</a></li>
+                        <li><a href="#"><i class="fas fa-map-marked-alt"></i> Trip Planner</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Learn</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-profile">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="userName">Traveler</span>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section (Modified with Welcome Message) -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome Back, <span id="welcomeUser">Explorer</span>!</h1>
+                <p>Continue your sustainable journey and discover new eco-friendly destinations that match your interests.</p>
+                
+                <!-- Search Bar (Your Original) -->
+                <div class="search-container">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> Where to?</label>
+                            <input type="text" id="destination" placeholder="Anywhere off the beaten path...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dates"><i class="fas fa-calendar-alt"></i> Travel Dates</label>
+                            <input type="text" id="dates" placeholder="Flexible dates">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sustainability"><i class="fas fa-leaf"></i> Sustainability Level</label>
+                            <select id="sustainability">
+                                <option value="any">Any</option>
+                                <option value="eco-friendly">Eco-Friendly</option>
+                                <option value="sustainable">Sustainable</option>
+                                <option value="regenerative">Regenerative</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="search-button" aria-label="Search destinations">
+                            <i class="fas fa-search"></i> Find Adventures
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content - ALL YOUR ORIGINAL SECTIONS -->
+        <main id="main-content" class="container">
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">How EcoWander Works</h2>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Discover Hidden Gems</h3>
+                            <p>Find unique destinations away from tourist crowds with our verified eco-friendly locations database.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Plan Sustainably</h3>
+                            <p>Calculate your carbon footprint and choose low-impact transportation and accommodation options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Support Local Communities</h3>
+                            <p>Connect directly with local guides and businesses to ensure your spending benefits residents.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Destinations -->
+            <section class="destinations">
+                <h2 class="section-title">Featured Eco-Destinations</h2>
+                
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Azores, Portugal" class="destination-img" loading="lazy">
+                        <div class="destination-content">
+                            <h3>Azores, Portugal</h3>
+                            <div class="eco-rating">
+                                <i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i>
+                                <span>Eco Score: 9.2/10</span>
+                            </div>
+                            <p>Volcanic islands with geothermal energy, whale watching, and sustainable agriculture.</p>
+                            <div class="destination-stats">
+                                <div class="stat"><i class="fas fa-users"></i><span>Low Crowds</span></div>
+                                <div class="stat"><i class="fas fa-sun"></i><span>Year-round</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bhutan" class="destination-img" loading="lazy">
+                        <div class="destination-content">
+                            <h3>Bhutan</h3>
+                            <div class="eco-rating">
+                                <i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i>
+                                <span>Eco Score: 9.8/10</span>
+                            </div>
+                            <p>Carbon-negative country with Gross National Happiness index and preserved Buddhist culture.</p>
+                            <div class="destination-stats">
+                                <div class="stat"><i class="fas fa-users"></i><span>Very Low Crowds</span></div>
+                                <div class="stat"><i class="fas fa-tree"></i><span>70% Forest Cover</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Faroe Islands" class="destination-img" loading="lazy">
+                        <div class="destination-content">
+                            <h3>Faroe Islands</h3>
+                            <div class="eco-rating">
+                                <i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i>
+                                <span>Eco Score: 8.9/10</span>
+                            </div>
+                            <p>Remote archipelago with dramatic landscapes and sustainable fishing practices.</p>
+                            <div class="destination-stats">
+                                <div class="stat"><i class="fas fa-users"></i><span>Moderate Crowds</span></div>
+                                <div class="stat"><i class="fas fa-wind"></i><span>100% Renewable Energy</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Costa Rica" class="destination-img" loading="lazy">
+                        <div class="destination-content">
+                            <h3>Osa Peninsula, Costa Rica</h3>
+                            <div class="eco-rating">
+                                <i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i>
+                                <span>Eco Score: 9.5/10</span>
+                            </div>
+                            <p>One of the most biodiverse places on Earth with community-run eco-lodges.</p>
+                            <div class="destination-stats">
+                                <div class="stat"><i class="fas fa-users"></i><span>Low Crowds</span></div>
+                                <div class="stat"><i class="fas fa-paw"></i><span>500+ Species</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impact Counter -->
+            <section class="impact-counter">
+                <div class="container">
+                    <h2 class="section-title">Our Community Impact</h2>
+                    
+                    <div class="counter-grid">
+                        <div class="counter-item">
+                            <div class="counter-number">12,847</div>
+                            <p>Eco-Trips Planned</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter-number">3,842</div>
+                            <p>Tons of CO₂ Saved</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter-number">156</div>
+                            <p>Local Communities Supported</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter-number">89</div>
+                            <p>Countries with Eco-Destinations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="container">
+                    <h2 class="section-title">What Our Travelers Say</h2>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>EcoWander helped me discover a beautiful eco-lodge in Costa Rica that I never would have found otherwise. The carbon calculator was eye-opening!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" loading="lazy">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Saved 2.3 tons CO₂</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The community feature connected me with a local guide in Bhutan. It was the most authentic travel experience I've ever had!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" loading="lazy">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <p>Supported 3 local families</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The off-the-beaten-path recommendations are incredible. No tourist crowds, just pure nature and culture.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" loading="lazy">
+                                <div>
+                                    <h4>Emma Rodriguez</h4>
+                                    <p>Discovered 5 hidden gems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Join the EcoWander Community</h2>
+                        <p>Get sustainable travel tips, hidden gem alerts, and exclusive eco-deals straight to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="cta-button">Subscribe</button>
+                        </form>
+                        <p class="small">We respect your privacy. Unsubscribe anytime.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Preview Section -->
+            <section class="blog-preview">
+                <div class="container">
+                    <h2 class="section-title">Latest from Our Blog</h2>
+                    <div class="blog-grid">
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sustainable Travel Tips" loading="lazy">
+                            <div class="blog-content">
+                                <span class="blog-category">Tips & Tricks</span>
+                                <h3>10 Ways to Reduce Your Travel Carbon Footprint</h3>
+                                <p>Simple changes that make a big difference...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Eco Lodge Guide" loading="lazy">
+                            <div class="blog-content">
+                                <span class="blog-category">Accommodation</span>
+                                <h3>How to Choose a Genuine Eco-Lodge</h3>
+                                <p>Spot greenwashing and find authentic stays...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Community Tourism" loading="lazy">
+                            <div class="blog-content">
+                                <span class="blog-category">Community</span>
+                                <h3>Why Community-Based Tourism Matters</h3>
+                                <p>How your travels can empower local people...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carbon Calculator Section -->
+            <section class="carbon-calculator">
+                <div class="container">
+                    <div class="calculator-wrapper">
+                        <div class="calculator-content">
+                            <h2>Calculate Your Trip's Carbon Footprint</h2>
+                            <p>See the environmental impact of your travel choices and find greener alternatives.</p>
+                            
+                            <form class="calculator-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-plane"></i> Flight (hours)</label>
+                                        <input type="number" min="0" step="0.5" placeholder="0" id="flight-hours">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label><i class="fas fa-car"></i> Car (km)</label>
+                                        <input type="number" min="0" placeholder="0" id="car-km">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-train"></i> Train (km)</label>
+                                        <input type="number" min="0" placeholder="0" id="train-km">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label><i class="fas fa-bus"></i> Bus (km)</label>
+                                        <input type="number" min="0" placeholder="0" id="bus-km">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Accommodation nights</label>
+                                    <input type="number" min="0" placeholder="Number of nights" id="accommodation-nights">
+                                </div>
+                                
+                                <button type="button" class="calculate-btn" onclick="calculateCarbon()">
+                                    <i class="fas fa-calculator"></i> Calculate Impact
+                                </button>
+                            </form>
+                            
+                            <div id="carbon-result" class="carbon-result" style="display: none;">
+                                <h3>Your Estimated Carbon Footprint:</h3>
+                                <div class="result-number">0 kg CO₂</div>
+                                <p class="comparison">Equivalent to driving a car for <span>0</span> km</p>
+                                <button class="offset-btn">Offset This Trip</button>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator-image">
+                            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Carbon Calculator" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>EcoWander</h3>
+                        <p>Making sustainable travel accessible and rewarding. Discover, plan, and journey with purpose.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Explore Destinations</a></li>
+                            <li><a href="#">Trip Planner</a></li>
+                            <li><a href="#">Carbon Calculator</a></li>
+                            <li><a href="#">Local Guides</a></li>
+                            <li><a href="#">Sustainable Travel Tips</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Eco-Certifications</a></li>
+                            <li><a href="#">Travel Ethics Guide</a></li>
+                            <li><a href="#">Packing List Generator</a></li>
+                            <li><a href="#">Offset Your Emissions</a></li>
+                            <li><a href="#">Community Guidelines</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-links">
+                            <li><i class="fas fa-envelope"></i> hello@ecowander.com</li>
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Green Street, Earth</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 EcoWander. All rights reserved. | <a href="#" style="color: #ccc;">Privacy Policy</a> | <a href="#" style="color: #ccc;">Terms of Service</a></p>
+                    <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for our planet</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Modal Functions
+        function openModal(type) {
+            document.getElementById('authModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            if(type === 'login') {
+                document.getElementById('loginForm').style.display = 'block';
+                document.getElementById('signupForm').style.display = 'none';
+                document.getElementById('modalTitle').textContent = 'Welcome Back';
+                document.getElementById('modalSubtitle').textContent = 'Log in to continue your eco-journey';
+            } else {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('signupForm').style.display = 'block';
+                document.getElementById('modalTitle').textContent = 'Join EcoWander';
+                document.getElementById('modalSubtitle').textContent = 'Start your sustainable travel journey today';
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('authModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Switch between forms
+        function switchToSignup() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('signupForm').style.display = 'block';
+            document.getElementById('modalTitle').textContent = 'Join EcoWander';
+            document.getElementById('modalSubtitle').textContent = 'Start your sustainable travel journey today';
+        }
+
+        function switchToLogin() {
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('modalTitle').textContent = 'Welcome Back';
+            document.getElementById('modalSubtitle').textContent = 'Log in to continue your eco-journey';
+        }
+
+        // Toggle password visibility
+        function togglePassword(element) {
+            const input = element.previousElementSibling;
+            if(input.type === 'password') {
+                input.type = 'text';
+                element.classList.remove('fa-eye');
+                element.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                element.classList.remove('fa-eye-slash');
+                element.classList.add('fa-eye');
+            }
+        }
+
+        // Handle Login
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            if(email && password) {
+                alert(`Welcome back, ${email}! Login successful.`);
+                
+                // Hide landing page and show main website
+                document.getElementById('landingPage').style.display = 'none';
+                document.getElementById('mainWebsite').style.display = 'block';
+                
+                // Update welcome message
+                const userName = email.split('@')[0];
+                document.getElementById('welcomeUser').textContent = userName;
+                document.getElementById('userName').textContent = userName;
+                
+                closeModal();
+            } else {
+                alert('Please fill in all fields');
+            }
+        }
+
+        // Handle Signup
+        function handleSignup(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('signupConfirmPassword').value;
+            
+            if(!name || !email || !password || !confirmPassword) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            if(password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            
+            if(password.length < 6) {
+                alert('Password must be at least 6 characters long');
+                return;
+            }
+            
+            alert(`Welcome to EcoWander, ${name}! Your account has been created successfully.`);
+            
+            // Hide landing page and show main website
+            document.getElementById('landingPage').style.display = 'none';
+            document.getElementById('mainWebsite').style.display = 'block';
+            
+            // Update welcome message
+            document.getElementById('welcomeUser').textContent = name;
+            document.getElementById('userName').textContent = name;
+            
+            closeModal();
+        }
+
+        // Logout function
+        function logout() {
+            if(confirm('Are you sure you want to logout?')) {
+                document.getElementById('mainWebsite').style.display = 'none';
+                document.getElementById('landingPage').style.display = 'block';
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('authModal');
+            if(event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Prevent form submission page reload
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', (e) => e.preventDefault());
+        });
+
+        // Your Original JavaScript Functions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Counter animation
+            const counters = document.querySelectorAll('.counter-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target') || +counter.innerText.replace(',', '');
+                    const count = +counter.innerText.replace(',', '');
+                    const increment = target / speed;
+                    
+                    if(count < target) {
+                        counter.innerText = Math.ceil(count + increment).toLocaleString();
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target.toLocaleString();
+                    }
+                };
+                
+                updateCount();
+            });
+            
+            // Search form submission
+            const searchForm = document.querySelector('.search-form');
+            if(searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Search functionality would be implemented here with backend integration!');
+                });
+            }
+            
+            // Destination card hover effect
+            const destinationCards = document.querySelectorAll('.destination-card');
+            destinationCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+                });
+            });
+            
+            // Newsletter Form Submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if(newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    alert(`Thanks for subscribing with ${email}! You'll receive our next newsletter soon.`);
+                    this.reset();
+                });
+            }
+            
+            // Back to Top Button
+            const backToTop = document.createElement('button');
+            backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            backToTop.className = 'back-to-top';
+            backToTop.setAttribute('aria-label', 'Back to top');
+            backToTop.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: var(--primary-green);
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                transition: background-color 0.3s;
+                z-index: 999;
+            `;
+            
+            backToTop.addEventListener('mouseenter', () => {
+                backToTop.style.backgroundColor = 'var(--dark-green)';
+            });
+            
+            backToTop.addEventListener('mouseleave', () => {
+                backToTop.style.backgroundColor = 'var(--primary-green)';
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            document.body.appendChild(backToTop);
+            
+            // Show/hide back to top button
+            window.addEventListener('scroll', () => {
+                if(window.scrollY > 300) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            });
+        });
+
+        // Carbon Calculator Function
+        window.calculateCarbon = function() {
+            const flightHours = parseFloat(document.getElementById('flight-hours').value) || 0;
+            const carKm = parseFloat(document.getElementById('car-km').value) || 0;
+            const trainKm = parseFloat(document.getElementById('train-km').value) || 0;
+            const busKm = parseFloat(document.getElementById('bus-km').value) || 0;
+            const nights = parseFloat(document.getElementById('accommodation-nights').value) || 0;
+            
+            // Simplified carbon calculations (kg CO2)
+            const flightCarbon = flightHours * 90;
+            const carCarbon = carKm * 0.12;
+            const trainCarbon = trainKm * 0.03;
+            const busCarbon = busKm * 0.08;
+            const accommodationCarbon = nights * 15;
+            
+            const totalCarbon = flightCarbon + carCarbon + trainCarbon + busCarbon + accommodationCarbon;
+            
+            const resultDiv = document.getElementById('carbon-result');
+            const resultNumber = resultDiv.querySelector('.result-number');
+            const comparisonSpan = resultDiv.querySelector('.comparison span');
+            
+            resultNumber.textContent = Math.round(totalCarbon).toLocaleString() + ' kg CO₂';
+            comparisonSpan.textContent = Math.round(totalCarbon / 0.12).toLocaleString();
+            
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        };
+    </script>
+</body>
+</html>
+website.html
+Displaying website.html.

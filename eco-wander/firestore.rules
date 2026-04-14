@@ -1,0 +1,70 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: trips
+    // Document ID: auto-generated
+    // Fields:
+    //   - userId: string (required) - The UID of the owner
+    //   - city: string (required) - Destination city
+    //   - hotelName: string (optional) - Selected hotel
+    //   - hotelPrice: number (optional) - Price per night
+    //   - duration: number (required) - Days
+    //   - budget: number (optional) - Total cost
+    //   - carbonFootprint: number (required) - CO2 in kg
+    //   - createdAt: timestamp (required) - Creation time
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && 
+             (request.auth.token.email == "nehaz24comp@student.mes.ac.in" && request.auth.token.email_verified == true);
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && (request.auth.uid == userId || isAdmin());
+    }
+
+    function isValidTrip(data) {
+      return data.userId is string &&
+             data.city is string && data.city.size() > 0 && data.city.size() < 100 &&
+             data.duration is number && data.duration > 0 &&
+             data.carbonFootprint is number &&
+             data.createdAt is timestamp &&
+             (!('hotelName' in data) || (data.hotelName is string && data.hotelName.size() < 200)) &&
+             (!('hotelPrice' in data) || data.hotelPrice is number) &&
+             (!('budget' in data) || data.budget is number);
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /trips/{tripId} {
+      // Allow user to read their own trips, or admin to read all
+      allow read: if isAuthenticated() && (isAdmin() || resource == null || resource.data.userId == request.auth.uid);
+      
+      // Allow user to create a trip for themselves, or admin to create for anyone
+      allow create: if isAuthenticated() && 
+                       (request.resource.data.userId == request.auth.uid || isAdmin()) && 
+                       isValidTrip(request.resource.data);
+      
+      allow delete: if isOwner(resource.data.userId);
+      
+      allow update: if isOwner(resource.data.userId) && 
+                       isValidTrip(request.resource.data) &&
+                       (request.resource.data.userId == resource.data.userId || isAdmin());
+    }
+  }
+}
